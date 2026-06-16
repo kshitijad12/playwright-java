@@ -20,7 +20,7 @@ public class RegistrationForm {
 		
 		PlaywrightAssertions.assertThat(page.locator(".submit-btn")).isDisabled();
 		
-		page.locator("#name").fill("kshitija dokarmare");
+		page.locator("#name").fill("kshitija vilas dokarmare");
 		
 		page.locator("#email").fill("kshitijadokarmare786@gmail.com");
 		
@@ -44,13 +44,11 @@ public class RegistrationForm {
 		
 		page.locator(".submit-btn").click();
 		
-		page.waitForTimeout(5000);
+		page.waitForTimeout(7000);
 		
 		page.close();
 		
 		browser.close();
-        
-        
 	}
 
 }

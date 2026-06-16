@@ -13,9 +13,8 @@ public class LoginLogout {
 	public static void main(String[] args) {
 		
 		Browser br = null ;
+
 		Page page = null ;
-		
-		
 		try {
 		
 		br = Playwright.create().chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
@@ -26,8 +25,8 @@ public class LoginLogout {
 		
 		PlaywrightAssertions.assertThat(page).hasTitle("Learn Automation Courses");
 		
-		//using id
-//		page.locator("#email1").fill("admin@email.com");
+		using id
+		page.locator("#email1").fill("admin@email.com");
 		
 		//uing xpath 
 //		page.locator("xpath=//input[@name='email1']").fill("admin@email.com");
