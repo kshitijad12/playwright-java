@@ -49,8 +49,6 @@ public class RegistrationForm {
 		page.close();
 		
 		browser.close();
-        
-        
 	}
 
 }
