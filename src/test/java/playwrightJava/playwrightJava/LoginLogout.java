@@ -14,8 +14,7 @@ public class LoginLogout {
 		
 		Browser br = null ;
 		Page page = null ;
-		
-		
+
 		try {
 		
 		br = Playwright.create().chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
